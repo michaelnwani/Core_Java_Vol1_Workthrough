@@ -150,9 +150,17 @@ public class MenuFrame extends JFrame
 		popup.add(copyAction);
 		popup.add(pasteAction);
 		
+		
 		JPanel panel = new JPanel();
 		panel.setComponentPopupMenu(popup);
+		
+		
+		panel.setInheritsPopupMenu(true);
 		add(panel);
+		
+		
+		
+		
 		pack();
 		
 		//the following line is a workaround for bug 4966109
