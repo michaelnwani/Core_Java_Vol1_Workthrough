@@ -3,7 +3,7 @@ package calculator;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
+	
 
 /**
  * A panel with calculator buttons and a result display.
