@@ -17,6 +17,11 @@ public class Employee
 		hireDay = calendar.getTime();
 	}
 	
+	public Employee(String n)
+	{
+		name = n;
+	}
+	
 	public String getName()
 	{
 		return name;
@@ -34,5 +39,10 @@ public class Employee
 	{
 		double raise = salary * byPercent / 100;
 		salary += raise;
+	}
+	
+	public String toString()
+	{
+		return name;
 	}
 }
