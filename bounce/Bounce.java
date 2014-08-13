@@ -91,7 +91,7 @@ class BounceFrame extends JFrame
 			
 			for (int i = 1; i <= STEPS; i++)
 			{
-				ball.move(comp.getBounds()); //getBounds() is a Rectangle method that returns the height, width, and location of a Rectangle object
+				ball.move(comp.getBounds()); //getBounds() is a Rectangle method that returns the height, width, and location of this component in the form of a Rectangle object
 				comp.paint(comp.getGraphics()); //alternative to comp.repaint() (saying comp, re-paint your Graphics context) because otherwise it'd have to wait for the method to finish to redraw
 				Thread.sleep(DELAY);
 			}
