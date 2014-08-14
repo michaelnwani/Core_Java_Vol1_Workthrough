@@ -34,7 +34,7 @@ public class TransferRunnable implements Runnable
 				int toAccount = (int) (bank.size() * Math.random());
 				double amount = maxAmount * Math.random();
 				bank.transfer(fromAccount, toAccount, amount);
-				Thread.sleep((int) (DELAY * Math.random())); //output is most likely weird because we're sleeping select threads for a random duration of time. Also, synchronization is weird.
+				Thread.sleep((int) (DELAY * Math.random())); //Thread number, matches up with the i number, because for each iteration, a new thread is made
 			}
 		}
 		catch (InterruptedException e)
